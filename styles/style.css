@@ -1,0 +1,361 @@
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0 80px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 80px; */
+  color: #1A1A1A;
+  font-family: "MuseoSansCyrl", sans-serif;
+  box-sizing: border-box;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.list__link {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #93BBEA;
+  border-radius: 40px;
+  padding: 40px 0 54px;
+  margin: 0 40px 82px;
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contacts::before {
+  content: '';
+  position: absolute;
+  width: 263px;
+  height: 195px;
+  left: 0;
+  top: 37px;
+  background-image: url(../images/contacts/left-pic.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.contacts::after {
+  content: '';
+  position: absolute;
+  width: 277px;
+  height: 226px;
+  right: 0;
+  bottom: 0;
+  background-image: url(../images/contacts/right-pic.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.contacts__heading {
+  font-family: "MuseoSansCyrl", sans-serif;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 6px 0;
+  color: #FFFFFF;
+}
+
+.contacts__subheading {
+  font-family: "MuseoSansCyrl", sans-serif;
+  font-size: 17px;
+  line-height: 23.8px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 40px;
+  color: #FFFFFF;
+  display: block;
+  max-width: 535px;
+}
+
+.contacts__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 0 100px;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #FFFFFF;
+  width: 160px;
+  padding: 15px 0;
+}
+
+.contacts__link {
+  /* font-family: "MuseoSansCyrl", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 600; */
+  padding: 0;
+  margin: 0;
+  color: #1A1A1A;
+  display: flex;
+  align-items: center;
+}
+
+.contacts__link-icon {
+  
+}
+
+.contacts__link-icon_chat {
+  width: 14px;
+  height: 13px;
+  margin: 0 8px 0 0;
+}
+
+.contacts__link-icon_call {
+  width: 16px;
+  height: 16px;
+  margin: 0 8px 0 0;
+}
+
+.contacts__link-icon_mail {
+  width: 14px;
+  height: 11px;
+  margin: 0 8px 0 0;
+}
+
+.contacts__link-icon_star {
+  width: 18px;
+  height: 16px;
+  margin: 0 6.81px 0 0;
+}
+
+.networks {
+  max-width: 996px;
+  width: 100%;
+  box-shadow: 0px 20px 60px 0px rgba(26, 26, 26, 0.05);
+  border-radius: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 42px 40px;
+  margin: 0 40px 80px;
+  box-sizing: border-box;
+  gap: 30px;
+}
+
+.networks__text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.networks__subheading {
+  padding: 0;
+  margin: 0 0 16px 0;
+  font-family: "MuseoSansCyrl", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.networks__heading {
+  padding: 0;
+  margin: 0;
+  font-family: "MuseoSansCyrl", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.networks__list {
+  gap: 14px;
+}
+
+.networks__item {
+  border-radius: 13.33px;
+  background-color: #F9F9F9;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.networks__icon_vk {
+  width: 25.33px;
+  height: 13.33px;
+}
+
+.networks__icon_inst {
+  width: 19.6px;
+  height: 19.6px;
+}
+
+.networks__icon_tiktok {
+  width: 18.9px;
+  height: 21.51px;
+}
+
+.networks__icon_twitter {
+  width: 23.3px;
+  height: 18.94px;
+}
+
+.networks__icon_yandex {
+  width: 36px;
+  height: 36px;
+}
+
+.networks__icon_fb {
+  width: 11px;
+  height: 24px;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-container__heading {
+  font-family: "MuseoSansCyrl", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  color: #1A1A1A;
+}
+
+.slider {
+  max-width: 1200px;
+  width: 100%;
+  padding: 32px 20px;
+  /* margin: 32px 20px; */
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.slider__list {
+  width: 2142px;
+  height: 170px;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+
+.slider__item {
+  /* max-height: 160px; */
+  height: 160px;
+  max-width: 282px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
+}
+
+.slider__item-heading {
+  font-family: "MuseoSansCyrl", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0;
+  color: #1A1A1A;
+  padding: 16px 0 0 16px;
+}
+
+.slider__item-heading_short {
+  max-width: 150px;
+  width: 100%;
+}
+
+.slider__item-subheading {
+  font-family: "MuseoSansCyrl", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  margin: 0;
+  color: #949494;
+  padding: 16px 16px 0 16px;
+}
+
+.slider__item-subheading_short {
+  max-width: 150px;
+  width: 100%;
+  padding: 16px 0 0 16px;
+}
+
+.slider__item-pic {
+  max-width: 104px;
+  width: 100%;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
+}
+
+.slider__btn_next {
+  right: 0;
+}
+
+.slider__btn_next_inactive {
+  display: none;
+}
+
+.slider__btn_prev {
+  left: 0;
+}
+
+.slider__btn-arrow {
+  width: 6.59px;
+  height: 11.17px;
+  object-fit: cover;
+}
+
+.slider__btn-arrow_prev {
+  transform: rotate(180deg);
+}
