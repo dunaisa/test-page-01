@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   color: #1A1A1A;
-  font-family: "MuseoSansCyrl", sans-serif;
+  font-family: "MuseoSansCyrl", Arial, sans-serif;
   box-sizing: border-box;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .contacts__heading {
-  font-family: "MuseoSansCyrl", sans-serif;
+  font-family: "MuseoSansCyrl", Arial, sans-serif;
   font-size: 60px;
   line-height: 72px;
   font-weight: 900;
@@ -79,7 +79,7 @@
 }
 
 .contacts__subheading {
-  font-family: "MuseoSansCyrl", sans-serif;
+  font-family: "MuseoSansCyrl", Arial, sans-serif;
   font-size: 17px;
   line-height: 23.8px;
   font-weight: 400;
@@ -169,7 +169,7 @@
 .networks__subheading {
   padding: 0;
   margin: 0 0 16px 0;
-  font-family: "MuseoSansCyrl", sans-serif;
+  font-family: "MuseoSansCyrl", Arial, sans-serif;
   font-size: 15px;
   line-height: 18px;
   font-weight: 600;
@@ -178,7 +178,7 @@
 .networks__heading {
   padding: 0;
   margin: 0;
-  font-family: "MuseoSansCyrl", sans-serif;
+  font-family: "MuseoSansCyrl", Arial, sans-serif;
   font-size: 40px;
   line-height: 48px;
   font-weight: 600;
@@ -236,7 +236,7 @@
 }
 
 .section__heading {
-  font-family: "MuseoSansCyrl", sans-serif;
+  font-family: "MuseoSansCyrl", Arial, sans-serif;
   font-size: 40px;
   line-height: 48px;
   font-weight: 600;
@@ -280,7 +280,7 @@
 }
 
 .slider__item-heading {
-  font-family: "MuseoSansCyrl", sans-serif;
+  font-family: "MuseoSansCyrl", Arial, sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
@@ -295,7 +295,7 @@
 }
 
 .slider__item-subheading {
-  font-family: "MuseoSansCyrl", sans-serif;
+  font-family: "MuseoSansCyrl", Arial, sans-serif;
   font-size: 15px;
   line-height: 21px;
   font-weight: 400;
@@ -397,7 +397,7 @@
 }
 
 .faq__question-heading{
-  font-family: "MuseoSansCyrl", sans-serif;
+  font-family: "MuseoSansCyrl", Arial, sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
@@ -413,7 +413,7 @@
 }
 
 .faq__answer-text {
-  font-family: "MuseoSansCyrl", sans-serif;
+  font-family: "MuseoSansCyrl", Arial, sans-serif;
   font-size: 13px;
   line-height: 18.2px;
   font-weight: 600;
