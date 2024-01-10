@@ -1,21 +1,29 @@
-const sliderList = document.querySelector('.slider__list');
-const nextBtnSlider = document.querySelector('.slider__btn_next');
-const prevBtnSlider = document.querySelector('.slider__btn_prev');
-let offset = 0;
+const initSlider = () => {
+  const sliderList = document.querySelector('.slider__list');
+  const sliderBtns = document.querySelectorAll('.slider .slider__btn');
+  const maxScrollLeft = sliderList.scrollWidth - sliderList.clientWidth;
 
-nextBtnSlider.addEventListener('click', function() {
-  if (offset > 306) {
-    nextBtnSlider.classList.add('slider__btn_next_inactive')
-  }
-  offset += 306;
-  sliderList.style.left = -offset + 'px'
-  console.log(offset)
-})
+  sliderBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const dir = btn.id === 'btn-prev' ? -1 : 1;
+      const scrollAmount = sliderList.clientWidth * dir;
+      sliderList.scrollBy({left: scrollAmount, behavior: 'smooth'})
+    })
+  })
 
-prevBtnSlider.addEventListener('click', function() {
-  if (offset < 0) {
-    prevBtnSlider.classList.add('slider__btn_next_inactive')
-  }
-  offset -= 306;
-  sliderList.style.left = -offset + 'px'
+  sliderList.addEventListener('scroll', () => {
+    sliderBtns[1].style.display = sliderList.scrollLeft <= 0 ? 'none' : 'block';
+    sliderBtns[0].style.display = sliderList.scrollLeft >= maxScrollLeft ? 'none' : 'block';
+  })
+
+}
+
+window.addEventListener('load', initSlider);
+
+const faqBox = document.querySelectorAll('.faq__box');
+
+faqBox.forEach(box => {
+  box.addEventListener('click', function() {
+    box.lastElementChild.classList.toggle('faq__answer_active')
+  })
 })
